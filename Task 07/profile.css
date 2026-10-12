@@ -21,11 +21,9 @@ body {
     margin-bottom: 20px;
 }
 
-/* Jarak antara satu profil dan profil lainnya */
+/* Memberi jarak antarprofil; tabel menjadi bingkai masing-masing profil */
 .profil {
-    border: 1px solid #bbb;
-    padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 /* Garis dan jarak isi pada tabel */
