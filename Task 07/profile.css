@@ -1,0 +1,48 @@
+/* Tampilan halaman */
+body {
+    width: 90%;
+    margin: 24px auto;
+    padding: 16px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Judul halaman */
+.judul {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* Kotak untuk setiap bagian agar konten terpisah */
+.bagian {
+    border: 1px solid #999;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+/* Jarak antara satu profil dan profil lainnya */
+.profil {
+    border: 1px solid #bbb;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Garis dan jarak isi pada tabel */
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+}
+
+/* Kotak sederhana sebagai pengganti foto */
+.foto {
+    width: 120px;
+    height: 150px;
+    margin: 16px auto;
+    border: 1px solid;
+    line-height: 150px;
+}
