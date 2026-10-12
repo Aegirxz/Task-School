@@ -1,0 +1,6 @@
+<section>...</section> — Mengelompokkan konten yang masih satu topik. Di halaman ini, dipakai untuk informasi kelas, daftar anggota, dan kumpulan profil.
+<article>...</article> — Membungkus konten yang bisa dipahami sendiri. Di halaman ini, setiap <article> berisi satu profil siswa.
+Kalau cuma butuh wadah untuk mengatur layout, gunakan <div>; <section> dan <article> menjelaskan makna kontennya.
+
+Sumber: MDN — https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/section
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/article
