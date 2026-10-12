@@ -1,125 +1,80 @@
-<!DOCTYPE html> <!-- Menentukan bahwa dokumen menggunakan HTML5 -->
-<html lang="id"> <!-- Menentukan bahasa utama halaman, yaitu Bahasa Indonesia -->
-<head> <!-- Menyimpan metadata dan pengaturan halaman -->
-    <meta charset="UTF-8"> <!-- Mendukung karakter khusus dan berbagai simbol -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Menyesuaikan lebar halaman dengan perangkat -->
-    <title>Direktori Profil Kelas X RPL 1</title> <!-- Menentukan judul yang tampil pada tab browser -->
-    <link rel="stylesheet" href="profile.css"> <!-- Menghubungkan halaman dengan file CSS terpisah -->
-</head> <!-- Menutup bagian metadata -->
-<body id="top"> <!-- Membuka isi halaman dan menyediakan target untuk tautan kembali ke atas -->
-    <div class="judul"> <!-- Pembungkus judul halaman -->
-        <h1>DIREKTORI PROFIL KELAS X RPL 1</h1> <!-- Judul utama halaman -->
-        <p><em>Buku digital lengkap &amp; Galeri Profil Siswa RPL</em></p> <!-- Subjudul atau keterangan direktori -->
-    </div> <!-- Menutup pembungkus judul -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direktori Profil Kelas X RPL 1</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body id="top">
+    <header class="judul">
+        <h1>Direktori Kelas X RPL 1</h1>
+        <p><em>Buku digital profil siswa</em></p>
+    </header>
 
-    <div> <!-- Pembungkus konten halaman -->
-        <div class="bagian"> <!-- Bagian informasi umum kelas -->
-            <h2>Informasi Umum Kelas</h2> <!-- Judul informasi kelas -->
-            <table border="1" cellpadding="6" width="100%"> <!-- Tabel informasi dengan garis, jarak isi, dan lebar penuh -->
-                <tr><th align="left">Wali Kelas</th><td>Bapak Ahmad Fauzi, S.Kom.</td></tr> <!-- Menampilkan nama wali kelas -->
-                <tr><th align="left">Ketua Kelas</th><td>Bima Putra</td></tr> <!-- Menampilkan nama ketua kelas -->
-                <tr><th align="left">Jumlah Siswa</th><td>32 Siswa</td></tr> <!-- Menampilkan jumlah siswa kelas -->
-                <tr><th align="left">Slogan Kelas</th><td><em>"Code Your Dream, Build Your Future"</em></td></tr> <!-- Menampilkan slogan kelas -->
-            </table> <!-- Menutup tabel informasi kelas -->
-        </div> <!-- Menutup informasi umum -->
+    <section class="bagian">
+        <h2>Informasi Kelas</h2>
+        <table>
+            <tr><th>Wali Kelas</th><td>Bapak Ahmad Fauzi, S.Kom.</td></tr>
+            <tr><th>Ketua Kelas</th><td>Bima Putra</td></tr>
+            <tr><th>Jumlah Siswa</th><td>32 Siswa</td></tr>
+            <tr><th>Slogan</th><td><em>"Code Your Dream, Build Your Future"</em></td></tr>
+        </table>
+    </section>
 
-        <br> <!-- Memberi jarak sebelum daftar anggota -->
+    <section class="bagian">
+        <h2>Anggota Kelas</h2>
+        <ol>
+            <li><a href="#siswa1">Bima Putra</a></li>
+            <li><a href="#siswa2">Khofifah Nabilah</a></li>
+        </ol>
+    </section>
 
-        <div class="bagian"> <!-- Bagian daftar anggota kelas -->
-            <h2>Daftar Anggota Kelas:</h2> <!-- Judul daftar anggota -->
-            <ol> <!-- Membuat daftar anggota bernomor -->
-                <li><a href="#siswa1">Bima Putra (Ketua Kelas)</a></li> <!-- Tautan menuju profil Bima -->
-                <li><a href="#siswa2">Khofifah Nabilah (Sekretaris)</a></li> <!-- Tautan menuju profil Khofifah -->
-            </ol> <!-- Menutup daftar anggota -->
-        </div> <!-- Menutup daftar anggota -->
+    <section>
+        <h2>Profil Siswa</h2>
 
-        <hr> <!-- Garis pemisah daftar anggota dan profil -->
-        <br> <!-- Memberi jarak sebelum bagian profil -->
+        <article class="profil" id="siswa1">
+            <h3>Profil 01 — Bima Putra</h3>
+            <div class="grid">
+                <div class="foto">Foto</div>
+                <div>
+                    <ul>
+                        <li><strong>NISN:</strong> 0081234567</li>
+                        <li><strong>TTL:</strong> Jakarta, 12 Mei 2010</li>
+                        <li><strong>Hobi:</strong> Musik &amp; Logika Pemrograman</li>
+                        <li><strong>Cita-cita:</strong> Software Engineer</li>
+                    </ul>
+                    <details>
+                        <summary>Lihat riwayat</summary>
+                        <p><strong>Pendidikan:</strong> SDN 01 Jakarta, SMPN 05 Jakarta</p>
+                        <p><strong>Keahlian:</strong> HTML, Python, Public Speaking</p>
+                    </details>
+                </div>
+            </div>
+            <p class="kembali"><a href="#top">↑ Kembali ke atas</a></p>
+        </article>
 
-        <div> <!-- Pembungkus bagian profil siswa -->
-            <h2>Profil Siswa</h2> <!-- Judul bagian profil -->
-            <div class="profil" id="siswa1"> <!-- Kotak profil pertama dan target tautan #siswa1 -->
-                <table border="1" cellpadding="8" width="100%"> <!-- Tabel profil dengan dua kolom dan lebar penuh -->
-                    <tr><th colspan="2" align="left">PROFIL SISWA 01 - BIMA PUTRA</th></tr> <!-- Judul profil yang membentang pada dua kolom -->
-                    <tr> <!-- Baris isi profil -->
-                        <td width="40%" align="center"> <!-- Kolom kiri untuk foto dan audio -->
-                            <div class="foto">Foto Bima</div> <!-- Placeholder foto Bima -->
-                            <p><strong>Suara Perkenalan:</strong></p> <!-- Label untuk audio perkenalan -->
-                            <audio controls> <!-- Pemutar audio dengan kontrol bawaan browser -->
-                                <source src="audio/siswa1.mp3" type="audio/mpeg"> <!-- Memuat audio perkenalan Bima -->
-                                Browser Anda tidak mendukung elemen audio. <!-- Pesan jika browser tidak mendukung audio -->
-                            </audio> <!-- Menutup pemutar audio -->
-                        </td> <!-- Menutup kolom kiri profil -->
-                        <td valign="top"> <!-- Kolom kanan untuk biodata dan riwayat -->
-                            <ul> <!-- Daftar biodata Bima -->
-                                <li><strong>NISN:</strong> 0081234567</li> <!-- Menampilkan NISN Bima -->
-                                <li><strong>Tempat, Tgl Lahir:</strong> Jakarta, 12 Mei 2010</li> <!-- Menampilkan tempat dan tanggal lahir Bima -->
-                                <li><strong>Hobi:</strong> Bermain Musik &amp; Logika Pemrograman</li> <!-- Menampilkan hobi Bima -->
-                                <li><strong>Cita-cita:</strong> Software Engineer</li> <!-- Menampilkan cita-cita Bima -->
-                                <li><strong>Motto:</strong> <em>"Jangan takut mencoba hal baru, error adalah proses belajar."</em></li> <!-- Menampilkan motto Bima -->
-                            </ul> <!-- Menutup daftar biodata Bima -->
-                            <details> <!-- Membuat informasi riwayat dapat dibuka dan ditutup -->
-                                <summary>Lihat Riwayat &amp; Keahlian</summary> <!-- Teks yang diklik untuk membuka detail -->
-                                <p><strong>Riwayat Pendidikan:</strong></p> <!-- Judul daftar pendidikan Bima -->
-                                <ul> <!-- Daftar riwayat pendidikan Bima -->
-                                    <li>SDN 01 Jakarta (2016–2022)</li> <!-- Pendidikan dasar Bima -->
-                                    <li>SMPN 05 Jakarta (2022–2025)</li> <!-- Pendidikan menengah pertama Bima -->
-                                </ul> <!-- Menutup daftar riwayat pendidikan -->
-                                <p><strong>Keahlian:</strong></p> <!-- Judul daftar keahlian Bima -->
-                                <ul> <!-- Daftar keahlian Bima -->
-                                    <li>HTML Dasar</li> <!-- Keahlian pertama Bima -->
-                                    <li>Python Dasar</li> <!-- Keahlian kedua Bima -->
-                                    <li>Public Speaking</li> <!-- Keahlian ketiga Bima -->
-                                </ul> <!-- Menutup daftar keahlian -->
-                            </details> <!-- Menutup bagian detail riwayat dan keahlian -->
-                        </td> <!-- Menutup kolom kanan profil -->
-                    </tr> <!-- Menutup baris isi profil -->
-                </table> <!-- Menutup tabel profil Bima -->
-                <p align="right"><a href="#top">⬆ Kembali ke Atas</a></p> <!-- Tautan kembali ke bagian paling atas halaman -->
-            </div> <!-- Menutup profil Bima -->
+        <article class="profil" id="siswa2">
+            <h3>Profil 02 — Khofifah Nabilah</h3>
+            <div class="grid">
+                <div class="foto">Foto</div>
+                <div>
+                    <ul>
+                        <li><strong>NISN:</strong> 0087654321</li>
+                        <li><strong>TTL:</strong> Bandung, 20 Agustus 2010</li>
+                        <li><strong>Hobi:</strong> Desain UI &amp; Menulis</li>
+                        <li><strong>Cita-cita:</strong> UI/UX Designer</li>
+                    </ul>
+                    <details>
+                        <summary>Lihat riwayat</summary>
+                        <p><strong>Pendidikan:</strong> SDN 02 Bandung, SMPN 01 Bandung</p>
+                        <p><strong>Keahlian:</strong> Canva, Figma, Menulis</p>
+                    </details>
+                </div>
+            </div>
+            <p class="kembali"><a href="#top">↑ Kembali ke atas</a></p>
+        </article>
+    </section>
+</body>
+</html>
 
-            <br> <!-- Memberi jarak antarprofil -->
-
-            <div class="profil" id="siswa2"> <!-- Kotak profil kedua dan target tautan #siswa2 -->
-                <table border="1" cellpadding="8" width="100%"> <!-- Tabel profil dengan dua kolom dan lebar penuh -->
-                    <tr><th colspan="2" align="left">PROFIL SISWA 02 - KHOFIFAH NABILAH</th></tr> <!-- Judul profil yang membentang pada dua kolom -->
-                    <tr> <!-- Baris isi profil -->
-                        <td width="40%" align="center"> <!-- Kolom kiri untuk foto dan audio -->
-                            <div class="foto">Foto Siswa</div> <!-- Placeholder foto Khofifah -->
-                            <p><strong>Suara Perkenalan:</strong></p> <!-- Label untuk audio perkenalan -->
-                            <audio controls> <!-- Pemutar audio dengan kontrol bawaan browser -->
-                                <source src="audio/siswa2.mp3" type="audio/mpeg"> <!-- Memuat audio perkenalan Khofifah -->
-                                Browser Anda tidak mendukung elemen audio. <!-- Pesan jika browser tidak mendukung audio -->
-                            </audio> <!-- Menutup pemutar audio -->
-                        </td> <!-- Menutup kolom kiri profil -->
-                        <td valign="top"> <!-- Kolom kanan untuk biodata dan riwayat -->
-                            <ul> <!-- Daftar biodata Khofifah -->
-                                <li><strong>NISN:</strong> 0087654321</li> <!-- Menampilkan NISN Khofifah -->
-                                <li><strong>Tempat, Tgl Lahir:</strong> Bandung, 20 Agustus 2010</li> <!-- Menampilkan tempat dan tanggal lahir Khofifah -->
-                                <li><strong>Hobi:</strong> Desain Antarmuka &amp; Menulis</li> <!-- Menampilkan hobi Khofifah -->
-                                <li><strong>Cita-cita:</strong> UI/UX Designer</li> <!-- Menampilkan cita-cita Khofifah -->
-                                <li><strong>Motto:</strong> <em>"Kreativitas dimulai dari langkah sederhana."</em></li> <!-- Menampilkan motto Khofifah -->
-                            </ul> <!-- Menutup daftar biodata Khofifah -->
-                            <details> <!-- Membuat informasi riwayat dapat dibuka dan ditutup -->
-                                <summary>Lihat Riwayat &amp; Keahlian</summary> <!-- Teks yang diklik untuk membuka detail -->
-                                <p><strong>Riwayat Pendidikan:</strong></p> <!-- Judul daftar pendidikan Khofifah -->
-                                <ul> <!-- Daftar riwayat pendidikan Khofifah -->
-                                    <li>SDN 02 Bandung (2016–2022)</li> <!-- Pendidikan dasar Khofifah -->
-                                    <li>SMPN 01 Bandung (2022–2025)</li> <!-- Pendidikan menengah pertama Khofifah -->
-                                </ul> <!-- Menutup daftar riwayat pendidikan -->
-                                <p><strong>Keahlian:</strong></p> <!-- Judul daftar keahlian Khofifah -->
-                                <ul> <!-- Daftar keahlian Khofifah -->
-                                    <li>Desain Grafis (Canva/Figma)</li> <!-- Keahlian pertama Khofifah -->
-                                    <li>Menulis Artikel</li> <!-- Keahlian kedua Khofifah -->
-                                    <li>Fotografi Dasar</li> <!-- Keahlian ketiga Khofifah -->
-                                </ul> <!-- Menutup daftar keahlian -->
-                            </details> <!-- Menutup bagian detail riwayat dan keahlian -->
-                        </td> <!-- Menutup kolom kanan profil -->
-                    </tr> <!-- Menutup baris isi profil -->
-                </table> <!-- Menutup tabel profil Khofifah -->
-                <p align="right"><a href="#top">⬆ Kembali ke Atas</a></p> <!-- Tautan kembali ke bagian paling atas halaman -->
-            </div> <!-- Menutup profil Khofifah -->
-        </div> <!-- Menutup pembungkus profil siswa -->
-    </div> <!-- Menutup pembungkus konten halaman -->
-</body> <!-- Menutup isi halaman -->
-</html> <!-- Menutup dokumen HTML -->
