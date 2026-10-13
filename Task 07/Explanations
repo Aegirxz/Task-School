@@ -99,7 +99,7 @@ Iya, benar. Yang tadi masih belum lengkap. Berikut penjelasan yang lebih lengkap
   - src = sumber file gambar.
   - alt = teks alternatif kalau gambar tidak bisa ditampilkan.
   - Contoh:
-    - <img src="Sources/Images/Fikri.jpeg" alt="Foto Fikri">
+    - <img src="Sources/Images/Bima.jpeg" alt="Foto Bima">
 
 - <details>
   - Membuat area yang bisa dibuka dan ditutup.
