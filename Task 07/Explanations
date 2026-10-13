@@ -1,6 +1,161 @@
-<section>...</section> — Mengelompokkan konten yang masih satu topik. Di halaman ini, dipakai untuk informasi kelas, daftar anggota, dan kumpulan profil.
-<article>...</article> — Membungkus konten yang bisa dipahami sendiri. Di halaman ini, setiap <article> berisi satu profil siswa.
-Kalau cuma butuh wadah untuk mengatur layout, gunakan <div>; <section> dan <article> menjelaskan makna kontennya.
+Iya, benar. Yang tadi masih belum lengkap. Berikut penjelasan yang lebih lengkap untuk tag-tag HTML yang dipakai di `Task 07/profile.html` dan juga cocok dengan catatan di `Task 07/Explanations`:
 
-Sumber: MDN — https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/section
-https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/article
+- <head>
+  - Bagian kepala dokumen.
+  - Berisi metadata seperti karakter, judul halaman, dan pengaturan umum.
+  - Konten di <head> tidak tampil di halaman utama.
+
+- <title>
+  - Judul halaman yang tampil di tab browser.
+  - Contoh di file ini: “Landing Page Direktori”.
+
+- <body>
+  - Bagian isi utama halaman yang tampil di browser.
+  - Semua elemen yang dilihat user berada di sini.
+  - Di file ini, body diberi style agar tampil dengan border, margin, background, dan lebar tertentu.
+
+- <header>
+  - Bagian kepala halaman.
+  - Biasanya berisi judul utama, logo, atau navigasi.
+  - Di sini dipakai untuk judul utama halaman: “Direktori Kelas X RPL 1”.
+
+- <h1>, <h2>, <h3>
+  - Tag heading untuk judul.
+  - <h1> = judul paling utama
+  - <h2> = subjudul
+  - <h3> = judul yang lebih kecil
+  - Contoh:
+    - <h1>Direktori Kelas X RPL 1</h1>
+    - <h2>Informasi Kelas</h2>
+    - <h3>Profil 01 — Ahmad Al Khudaifi</h3>
+
+- <p>
+  - Paragraf.
+  - Digunakan untuk teks biasa.
+  - Contoh: kalimat “Buku digital profil siswa”.
+
+- <em>
+  - Memberi penekanan pada teks dengan gaya miring.
+  - Contoh: <em>Buku digital profil siswa</em>.
+
+- <i>
+  - Mirip <em>, tetapi lebih menekankan tampilan italic.
+  - Dipakai pada slogan: “Code Your Dream, Build Your Future”.
+
+- <section>
+  - Membagi halaman menjadi beberapa bagian yang punya topik tertentu.
+  - Cocok untuk “Informasi Kelas”, “Anggota Kelas”, dan “Profil Siswa”.
+  - Fungsi: membuat struktur dokumen lebih jelas.
+
+- <article>
+  - Menandakan konten yang berdiri sendiri dan bisa dipahami sendiri.
+  - Di halaman ini, setiap profil siswa dibuat dalam satu <article>.
+  - Jadi satu profil = satu artikel.
+
+- <div>
+  - Wadah umum untuk mengelompokkan elemen.
+  - Digunakan untuk layout seperti foto + teks profil.
+  - Kalau tidak punya makna khusus, biasanya memakai <div>.
+
+- <table>
+  - Membuat tabel.
+  - Dipakai untuk menampilkan data dalam bentuk baris dan kolom.
+
+- <tr>
+  - Baris tabel.
+  - Setiap baris berisi data.
+
+- <th>
+  - Sel header tabel.
+  - Biasanya digunakan untuk label seperti “Wali Kelas”, “Ketua Kelas”.
+  - Teks di <th> biasanya tampil tebal.
+
+- <td>
+  - Sel data tabel.
+  - Berisi isi dari tabel, misalnya nama wali kelas atau jumlah siswa.
+
+- <ol>
+  - Daftar berurutan.
+  - Urutannya otomatis 1, 2, 3, ...
+  - Dipakai di daftar anggota kelas.
+
+- <ul>
+  - Daftar tidak berurutan.
+  - Biasanya tampil dengan bullet.
+  - Dipakai untuk menampilkan data profil siswa seperti TTL, Hobi, Cita-cita.
+
+- <li>
+  - Item dalam daftar.
+  - Setiap nama siswa, atau setiap poin profil, ditulis dalam <li>.
+
+- <a href>
+  - Tag link/hyperlink.
+  - href = alamat tujuan link.
+  - Digunakan untuk menghubungkan nama siswa ke profil masing-masing, atau tombol “Kembali ke atas”.
+  - Contoh: <a href="#siswa1">Ahmad Al Khudaifi</a>
+
+- <img src>
+  - Menampilkan gambar.
+  - src = sumber file gambar.
+  - alt = teks alternatif kalau gambar tidak bisa ditampilkan.
+  - Contoh:
+    - <img src="Sources/Images/Fikri.jpeg" alt="Foto Fikri">
+
+- <details>
+  - Membuat area yang bisa dibuka dan ditutup.
+  - Biasanya dipakai untuk informasi tambahan yang tidak perlu langsung terlihat.
+  - Di halaman ini dipakai untuk bagian “Lihat riwayat”.
+
+- <summary>
+  - Judul dari elemen <details>.
+  - Biasanya tampak seperti tombol yang bisa diklik.
+  - Contoh: <summary>Lihat riwayat</summary>
+
+- <audio controls>
+  - Membuat pemutar audio di halaman.
+  - controls = menampilkan tombol play, pause, volume, dll.
+  - Digunakan untuk file suara profil siswa.
+
+- <source src="..." type="...">
+  - Menentukan sumber file audio atau video.
+  - src = lokasi file
+  - type = tipe file
+  - Contoh: <source src="Sources/Voice/Bima.ogg" type="audio/ogg">
+
+- <strong>
+  - Memberi penekanan lebih tebal pada teks.
+  - Dipakai pada label seperti:
+    - <strong>TTL:</strong>
+    - <strong>Hobi:</strong>
+    - <strong>Cita-cita:</strong>
+
+- <br>
+  - Pindah baris baru.
+  - Meskipun di file ini jarang dipakai, ini tag HTML umum untuk memisahkan baris.
+
+- class
+  - Atribut untuk memberi nama kelas pada elemen.
+  - Digunakan untuk styling CSS.
+  - Contoh: class="bagian", class="profil", class="judul"
+
+- id
+  - Atribut unik untuk elemen tertentu.
+  - Dipakai untuk navigasi ke bagian tertentu.
+  - Contoh:
+    - id="top" pada body
+    - id="siswa1", id="siswa2", dll
+
+- style
+  - Atribut untuk menambahkan CSS inline.
+  - Digunakan untuk mengatur tampilan langsung di HTML.
+  - Contoh: border, color, background, margin, font-family, text-align
+
+inti dari file ini:
+- <section> dan <article> untuk struktur makna konten
+- <div> untuk layout
+- <table>, <tr>, <th>, <td> untuk data kelas
+- <ol>, <ul>, <li> untuk daftar
+- <a> untuk link
+- <img>, <audio>, <source> untuk media
+- <details> dan <summary> untuk info yang bisa dibuka
+- <id> dan <class> untuk identifikasi dan styling
